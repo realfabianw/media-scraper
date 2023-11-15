@@ -83,7 +83,7 @@ def parse_article(url):
 
     if multipage:
         print("multiplage article found. Requesting: ", multipage.get("href"))
-        time.sleep(random.uniform(1, 3))
+        time.sleep(random.uniform(0.5, 2))
         page = urlopen(multipage.get("href"))
         soup = BeautifulSoup(page, "html.parser")
 
